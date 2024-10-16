@@ -8,6 +8,7 @@ public class WFCNode : ScriptableObject
 {
     public string Name;
     public GameObject Prefab;
+    public int weight;
     public WFC_Connection Top;
     public WFC_Connection Bottom;
     public WFC_Connection Left;

@@ -81,8 +81,31 @@ public class WFCBuilder : MonoBehaviour
             }
             else
             {
-                //could give nodes weight depending on which nodes would be more frequent in the map
-                _grid[x, y] = potentialNodes[Random.Range(0, potentialNodes.Count)];
+                // Calculate total weight of all potential nodes
+                int totalWeight = 0;
+                foreach (var node in potentialNodes)
+                {
+                    totalWeight += node.weight;
+                }
+
+                // Choose a random number within the total weight range
+                int randomWeight = Random.Range(0, totalWeight);
+                
+                // Select a node based on its weight
+                int cumulativeWeight = 0;
+                WFCNode selectedNode = null;
+
+                foreach (var node in potentialNodes)
+                {
+                    cumulativeWeight += node.weight;
+                    if (randomWeight < cumulativeWeight)
+                    {
+                        selectedNode = node;
+                        break;
+                    }
+                }
+
+                _grid[x, y] = selectedNode;
             }
 
             GameObject newNode = Instantiate(_grid[x, y].Prefab, new Vector3(x, y, 0f), Quaternion.identity);

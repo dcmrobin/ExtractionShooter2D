@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: UD
   Prefab: {fileID: 8856496725640102799, guid: d267f30c7ccc077419b9eff489e3c646, type: 3}
+  weight: 1
   Top:
     CompatibleNodes:
     - {fileID: 11400000, guid: adbaaf0d55740444bb6e5d822231ceed, type: 2}
