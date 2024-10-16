@@ -342,6 +342,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1726341483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726341485}
+  - component: {fileID: 1726341484}
+  m_Layer: 0
+  m_Name: World Builder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1726341484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726341483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f4d1ff430ec6946888a93046b2c9f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Width: 10
+  Height: 10
+  Nodes:
+  - {fileID: 11400000, guid: 5046d1de7adb9e14fbba14a4152fc78e, type: 2}
+  - {fileID: 11400000, guid: db8df5dbbde364243894b95547b5194a, type: 2}
+  - {fileID: 11400000, guid: adbaaf0d55740444bb6e5d822231ceed, type: 2}
+  - {fileID: 11400000, guid: 6b2fe1f5c8db0764eb4b9185a1bf1497, type: 2}
+  - {fileID: 11400000, guid: 6a7a79e1bcda8b545a1469e1d24936cc, type: 2}
+  - {fileID: 11400000, guid: 7736e227cf2cc6348b220333e30243b3, type: 2}
+  - {fileID: 11400000, guid: bc49fe17c296e0149ab82495b88f65a2, type: 2}
+  - {fileID: 11400000, guid: 467b49bd8b88fc040867d9830aee2513, type: 2}
+  - {fileID: 11400000, guid: 11d599bdd931e224da2155f87768be6e, type: 2}
+  - {fileID: 11400000, guid: 6c83497a76b93d34bbbac53970ab297a, type: 2}
+  - {fileID: 11400000, guid: 296ac52a4ec96384595c8bd64186586e, type: 2}
+  - {fileID: 11400000, guid: 34b6ee7c648e57c48923a494f1de5af8, type: 2}
+--- !u!4 &1726341485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726341483}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3337733085964566739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,3 +465,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 3337733085964566739}
+  - {fileID: 1726341485}

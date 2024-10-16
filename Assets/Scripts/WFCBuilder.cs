@@ -16,10 +16,10 @@ public class WFCBuilder : MonoBehaviour
     private List<Vector2Int> _toCollapse = new();
 
     private Vector2Int[] offsets = new Vector2Int[] {
-        new(0, 1),//top
-        new(0, -1),//bottom
-        new(0, 0),//right
-        new(0, 1)//left
+        new(0, 2),//top
+        new(0, -2),//bottom
+        new(2, 0),//right
+        new(-2, 0)//left
     };
 
     private void Start() {
